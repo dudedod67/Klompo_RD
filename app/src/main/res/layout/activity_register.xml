@@ -141,7 +141,6 @@
             android:textColor="@color/secondaryColor"
             android:textSize="15dp"
             />
-
     </LinearLayout>
 
 </RelativeLayout>
