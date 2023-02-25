@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@color/background">
+
+    <ImageView
+        android:id="@+id/lGambar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shape"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        />
+
+    <ImageView
+        android:id="@+id/kembali1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="kembali1"
+        />
+
+    <TextView
+        android:id="@+id/lTxt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lGambar1"
+        android:text="Welcome Back!"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppinssemibold"/>
+
+    <ImageView
+        android:id="@+id/lgambar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/login"
+        android:layout_below="@+id/lTxt1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/ly2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/lgambar2"
+        android:padding="30dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/button_shape"
+            android:hint="Masukkan Email"
+            android:paddingLeft="10dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinsregular"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/button_shape"
+            android:hint="Masukkan Password"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinsregular"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ltxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget Password?"
+        android:fontFamily="@font/poppinsregular"
+        android:textSize="16dp"
+        android:layout_below="@+id/ly2"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/secondaryColor"
+        />
+
+    <Button
+        android:id="@+id/lBtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ltxt2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:width="290dp"
+        android:background="@drawable/button_shape"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="LOGIN"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/lBtn3"
+        android:gravity="center"
+        android:layout_marginTop="18dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tidak Punya Akun?"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Daftar"
+            android:fontFamily="@font/poppinsbold"
+            android:textColor="@color/secondaryColor"
+            android:textSize="15dp"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
