@@ -13,6 +13,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/shape"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
         />
 
     <ImageView
@@ -53,7 +55,8 @@
         android:id="@+id/btn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txt2"
+        android:layout_above="@id/btn2"
+        android:layout_marginBottom="20dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:width="290dp"
@@ -68,7 +71,7 @@
         android:id="@+id/btn2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btn1"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:width="290dp"
         android:text="REGISTER"
@@ -76,7 +79,7 @@
         android:textSize="18dp"
         android:textColor="@color/white"
         android:fontFamily="@font/poppinssemibold"
-        android:layout_marginTop="11dp"
+        android:layout_marginBottom="100dp"
         android:onClick="btn2"
         />
 
